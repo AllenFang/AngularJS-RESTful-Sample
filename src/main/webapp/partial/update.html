@@ -1,0 +1,34 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Update Todo</h3>
+    </div>
+    <div class="panel-body form-horizontal"  role="form">
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-xs-3">
+                <input type="text" name="name" ng-model="todo.name" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="owner" class="col-sm-2 control-label">Owner</label>
+            <div class="col-xs-3">
+                <input type="text" name="owner" ng-model="todo.owner" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="priority" class="col-sm-2 control-label">Priority</label>
+            <div class="col-xs-3">
+                <select name="priority" ng-model="todo.priority" class="form-control">
+                    <option value='High'>High</option>
+                    <option value='Middle'>Middle</option>
+                    <option value='Low'>Low</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="button" class="btn btn-default" ng-click="update()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
